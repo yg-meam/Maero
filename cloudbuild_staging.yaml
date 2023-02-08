@@ -1,0 +1,26 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  id: Build
+  args:
+  - 'build'
+  - '--build-arg'
+  - 'ENV=staging'
+  - '-t'
+  - 'gcr.io/$PROJECT_ID/innobank:$COMMIT_SHA'
+  - '.'
+- name: 'gcr.io/cloud-builders/docker'
+  id: Push
+  args:
+  - 'push'
+  - 'gcr.io/$PROJECT_ID/innobank:$COMMIT_SHA'
+- name: "gcr.io/cloud-builders/gke-deploy"
+  id: 'Deploy'
+  args:
+  - run
+  - --image=gcr.io/$PROJECT_ID/innobank:$COMMIT_SHA
+  - --location=asia-northeast3-a
+  - --cluster=staging
+options:
+  pool:
+    name: 'projects/hhsoft-356802/locations/asia-northeast3/workerPools/build'
+timeout: 900s

@@ -1,0 +1,21 @@
+version: 0.0
+os: linux
+files:
+   - source: /
+     destination: /home/ubuntu/maero/
+permissions:
+   - object: /home/ubuntu/maero/
+     pattern: "**"
+     owner: ubuntu
+     group: ubuntu
+     mode: 755
+hooks:
+   ApplicationStop:
+    - location: bin/stop_server.sh
+      runas: ubuntu
+   AfterInstall:
+    - location: bin/run_build.sh
+      runas: ubuntu
+   ApplicationStart:
+    - location: bin/run_server.sh
+      runas: ubuntu

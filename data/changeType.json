@@ -1,0 +1,110 @@
+[
+    {
+        "value": "status",
+        "text": "상태"
+    },
+    {
+        "value": "orderType",
+        "text": "판매처"
+    },
+    {
+        "value": "orderDate",
+        "text": "주문일"
+    },
+    {
+        "value": "deliveryExpireDate",
+        "text": "발송기한"
+    },
+    {
+        "value": "deleveryStartDate",
+        "text": "발송일"
+    },
+    {
+        "value": "deleveryMemo",
+        "text": "발송메모"
+    },
+    {
+        "value": "orderMemo",
+        "text": "발주메모"
+    },
+    {
+        "value": "partnerShop",
+        "text": "매입처"
+    },
+    {
+        "value": "partnerPrice",
+        "text": "매입가"
+    },
+    {
+        "value": "partnerOrderNo",
+        "text": "주문번호"
+    },
+    {
+        "value": "orderType",
+        "text": "판매처"
+    },
+    {
+        "value": "orderNotice",
+        "text": "주문알림"
+    },
+    {
+        "value": "brandMemo",
+        "text": "브랜드"
+    },
+    {
+        "value": "partnerOrderDate",
+        "text": "매입일"
+    },
+    {
+        "value": "deliveryType",
+        "text": "운송방법"
+    },
+    {
+        "value": "orderPrice",
+        "text": "판매가"
+    },
+    {
+        "value": "PackageId",
+        "text": "상자"
+    },
+    {
+        "value": "hscode",
+        "text": "HSCODE"
+    },
+    {
+        "value": "productName",
+        "text": "상품명"
+    },
+    {
+        "value": "orderNumber",
+        "text": "주문수량"
+    },
+    {
+        "value": "colorSize",
+        "text": "옵션"
+    },
+    {
+        "value": "buyerName",
+        "text": "성명"
+    },
+    {
+        "value": "zipcode",
+        "text": "우편번호"
+    },
+    {
+        "value": "address",
+        "text": "주소"
+    },
+    {
+        "value": "buyerPhone",
+        "text": "전화번호"
+    },
+    {
+        "value": "buyerPhone",
+        "text": "전화번호"
+    },
+    {
+        "value": "packageSum",
+        "text": "총중량"
+    }
+]
